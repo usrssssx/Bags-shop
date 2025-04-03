@@ -1,0 +1,281 @@
+@font-face{
+    font-family: "Arial Black";
+    src: url("fonts/arial_black.ttf");
+}
+ 
+@font-face{
+    font-family: "Segoe UI Bold";
+    src: url("fonts/Segoe\ UI\ Bold.ttf");  
+}
+@font-face{
+    font-family: "Segoe UI Bold Italic";
+    src: url("fonts/Segoe\ UI\ Bold\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI Italic";
+    src: url("fonts/Segoe\ UI\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI";
+    src: url("fonts/Segoe\ UI.ttf");  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    
+    
+}
+
+.main{
+    width: 1600px;
+    height: 800px;
+}
+
+img{
+    width: 35%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color:#2F2F2F;
+    align-items:center;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+nav{
+    width: 1600px;
+    font-family: 'Pacifico', cursive;
+    margin-left: 225px;
+    padding-top: 48px;
+    align-items:center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    white-space: nowrap;
+}
+
+.nav-logo{
+    margin-left: 100px;
+    max-width: 50%;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.link a{
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 0.25rem;
+    color:#EEEFF1;
+}
+
+
+
+.link a::after{
+    content:"";
+    position: absolute;
+    height: 0.1rem;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F59B00;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width:70%;
+}
+
+.btn{
+    font-family: 'Pacifico', cursive;
+    border-radius:5px;
+    gap: 10px;
+    background-color:#F59B00;
+    color:#EEEFF1;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:black;
+    background-color:white;
+    transition: all 0.3s ease;
+}
+
+.btn a{
+    color:black;
+}
+
+
+
+nav button{
+    margin-right: 300px;
+}
+
+header{
+    width: 1600px;
+    height: 466px;
+    background: url(images/backdev.png) 100% 100% no-repeat;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 119px auto;
+}
+
+header .intoduction{
+    margin-left: 216px;
+}
+
+header h4{
+    line-height: 30px;
+    font-size: 20px;
+    color:#F59B00;
+    font-weight: 500;
+}
+
+header h1{
+    color:#FFFFFF;
+    font-weight: 700px;
+    font-size: 61px;
+    line-height: 79.3px;
+}
+
+header p{
+    font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+header button{
+    margin-top: 35px;
+}
+
+header .girl{
+    margin-top: -129px;
+    width: 1100px;
+    height: 714px;
+}
+
+.container{
+    padding-top: 3px;
+    margin:0 auto;
+    background:#EEEFF1;
+    text-align: center;
+    height: 500px;
+}
+
+.container h2{
+    margin-top: 100px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.container h4{
+    margin-right: 0px;
+    margin-top: 20;
+    text-align: center;
+}
+
+.container p{
+    margin-top: 10px;
+    margin-right: 0px;
+    white-space: nowrap;
+    text-align: center;
+}
+footer{
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center; 
+    align-items:center;
+    text-align: center;
+    width: 1600px;
+    height: 218px;
+    background-color:#2F2F2F;
+}
+
+.foot{
+    justify-content: center;
+    justify-items: center; 
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+
+.firma img{
+    width: 35%;
+}
+
+.firma p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 227px;
+}
+
+.contact{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 200px;
+    color:#EEEFF1;
+}
+
+.contact h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.contact p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.news{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    text-align: left;
+}
+
+.news h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+.position{
+    margin-top: 20px;
+}

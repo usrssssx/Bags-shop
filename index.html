@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width='device-width', initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+        <link rel="icon" href="images/fav.ico.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <title>Канцеляндия</title>
+    </head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="nav-logo"><img src="images/logoKursa.png"></a>
+        </div>
+
+        <ul class="nav-links">
+             <li class="link"><a href="index.html">Главная</a></li>
+            <li class="link"><a href="about.html">О нас</a></li>
+        </ul>
+        <div class="nav-btn">
+            <button class="btn" onclick="window.location.href = 'product.html'">Товары</button>
+         </div>
+    </nav>
+
+    <header>
+         <div class="intoduction">
+            <h4>Лучшая канцелярия</h4>
+            <h1>Рисуй.Пиши.<br>Развивайся</h1>
+            <p>Доставка оптовых заказов по городу бесплатно. Лучшие товары в России. Специализируемся на товарах для офиса и учебы,<br>которые<b> упрощают жизнь каждому</b></p>
+            <div class="b-intro">
+                <button class="btn" onclick="window.location.href = 'product.html'">К товарам</button>
+            </div> 
+        </div>   
+        <div class='intro-image'>
+            <img class="girl" src="images/devochkasait.png">
+        </div>
+    </header>
+    <div class="container">
+        <h2>Узнай о нас больше!</h2>
+        <div class="info-rev">
+            <div class="information">
+                <div class="reviews">
+                    <div class="images">
+                        <img src="images/bag.png" class="active">
+                        <img src="images/pen.png">
+                        <img src="images/pencil.png">
+                        <img src="images/pencilcase.png">
+                    </div>
+                    <div class="dots">
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                        <button onclick="dot(3)"></button>
+                        <button onclick="dot(4)"></button>
+                    </div>
+                    <button id="prev" onclick="prev()"> &lt; </button>
+                    <button id="next" onclick="next()"> &gt; </button>
+                </div>
+            </div>    
+            <div class="information">
+                <div class="text-rewiews">
+                    <h3>Специальные товары</h3>
+                    <h2>Товары лучшего качества<br> от отечественных производителей<br> по лучшим ценам только у нас.</h2>
+                    <p>Несколько примеров наших товаров,<br> на представленные товары сейчас скидка!</p>
+                    <button class="btn" onclick="window.location.href = 'product.html'">Хочу больше!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <section>
+        <h2>Наши рюкзаки для учебы и тренировок</h2>
+        <p>Наши портфели помогут вам ничего не забыть на тренировку или учебы, <br>так как вы не будете думать о том, что вам не хватит места</p>
+        <div class="products">
+            <div class="product">
+                <img src="images/bag1.png">
+            </div>
+            <div class="product">
+                <img class="bag2" src="images/bag2.png">
+            </div>
+            <div class="product">
+                <img class="bag3" src="images/bag3.png">
+            </div>
+            <div class="product">
+                <img class="bag4" src="images/bag4.png">
+            </div>
+            <div class="product">
+                <img class="bag5" src="images/bag5.png">
+            </div>
+            <div class="product">
+                <img class="bag6" src="images/bag6.png">
+            </div>
+            <div class="product">
+                <img class="bag7" src="images/bag7.png">
+            </div>
+            <div class="product">
+                <img class="bag8"src="images/bag8.png">
+            </div>
+        </div>
+        <button class="btn" onclick="window.location.href = 'product.html'">Хочу больше!	&gt;	&gt;</button>
+    </section>
+
+    <section class="send-mail"> 
+        <div class="email">
+            <img src="images/background.png" alt="">
+            <form>
+                <h1 class="title text-center mb-4">Оставьте заявку на заказ</h1>
+                <div class="text-mail">
+                        <label>
+                        </label>
+                        <input 
+                            class="form-control form-control-lg thick"
+                            type="text"
+                            name="form-name"
+                            placeholder="Ваше имя">   
+                    </div>        
+                    <div class="form-group position-relative">
+                        <label>
+                        </label>
+                        <input
+                            class="form-control form-control-lg thick"
+                            type="tel"
+                            name="form-tel"
+                            placeholder="Номер телефона">
+          
+                    </div> 
+                    <div class="form-group message">
+                        <textarea id="formMessage" class="form-control form-control-lg" rows="7" placeholder="Текст"></textarea>
+
+                    </div> 
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary" tabIndex="-1">Заявка</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="foot">
+            <div class="firma">
+                <a href="index.html" class="nav-logo"><img src="images/logoKursa.png"></a>
+                <p>Всегда помогаем познавать новые границы. Доверьте нам ваши заботы на работе! Мы вам всегда поможем!</p>
+            </div>
+            <div class="contact">
+                <h3>Контакты</h3>
+                <p>+7(999)99-00-00</p>
+                <p>Kancland@mail.ru</p>
+            </div>
+            <div class="news">
+                <h3>Новости</h3>
+                <div class="position">
+                    <label>
+                    </label>
+                    <input
+                        class="form-control form-control-lg thick"
+                        type="mail"
+                        name="sub-mail"
+                        placeholder="Введите почту">
+                </div>
+                <button class="btn">Подписка</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

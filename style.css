@@ -1,0 +1,542 @@
+@font-face{
+    font-family: "Arial Black";
+    src: url("fonts/arial_black.ttf");
+}
+ 
+@font-face{
+    font-family: "Segoe UI Bold";
+    src: url("fonts/Segoe\ UI\ Bold.ttf");  
+}
+@font-face{
+    font-family: "Segoe UI Bold Italic";
+    src: url("fonts/Segoe\ UI\ Bold\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI Italic";
+    src: url("fonts/Segoe\ UI\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI";
+    src: url("fonts/Segoe\ UI.ttf");  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    
+    
+}
+
+.main{
+    width: 1600px;
+    height: 800px;
+}
+
+img{
+    width: 35%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color:#2F2F2F;
+    align-items:center;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+nav{
+    width: 1600px;
+    font-family: 'Pacifico', cursive;
+    margin-left: 225px;
+    padding-top: 48px;
+    align-items:center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    white-space: nowrap;
+}
+
+.nav-logo{
+    margin-left: 100px;
+    max-width: 50%;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.link a{
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 0.25rem;
+    color:#EEEFF1;
+}
+
+
+
+.link a::after{
+    content:"";
+    position: absolute;
+    height: 0.1rem;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F59B00;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width:70%;
+}
+
+.btn{
+    font-family: 'Pacifico', cursive;
+    border-radius:5px;
+    gap: 10px;
+    background-color:#F59B00;
+    color:#EEEFF1;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:black;
+    background-color:white;
+    transition: all 0.3s ease;
+}
+
+.btn a{
+    color:black;
+}
+
+
+
+nav button{
+    margin-right: 300px;
+}
+
+header{
+    width: 1600px;
+    height: 466px;
+    background: url(images/backdev.png) 100% 100% no-repeat;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 119px auto;
+}
+
+header .intoduction{
+    margin-left: 216px;
+}
+
+header h4{
+    line-height: 30px;
+    font-size: 20px;
+    color:#F59B00;
+    font-weight: 500;
+}
+
+header h1{
+    color:#FFFFFF;
+    font-weight: 700px;
+    font-size: 61px;
+    line-height: 79.3px;
+}
+
+header p{
+    font-family: 'Pacifico', cursive;
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 25.6px;
+}
+
+header button{
+    margin-top: 35px;
+}
+
+header .girl{
+    margin-top: -129px;
+    width: 1100px;
+    height: 714px;
+}
+
+
+.container{  
+    background-color:#EEEFF1;
+    padding-top: 130px;
+}
+
+
+.container h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 55px;
+}
+
+.info-rev{
+    grid-template-columns: repeat(2, 1fr);
+    display: inline-flex;
+    padding-bottom: 100px;
+    justify-content: center;
+    justify-items: center;
+    margin: 150px 0px auto;
+    column-gap:200px;
+}
+
+.information{
+    align-items:center;
+    text-align: left;
+}
+
+.information h3{
+    color:#F59B00;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.information h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-size: 31px;
+    font-weight: 700px;
+    line-height: 43.4px;
+    color: black;
+}
+
+.information p{
+    font-family: 'Pacifico', cursive;
+    margin-top: 24px;
+    color:#2F2F2F;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.information button{
+    margin-top: 35px;
+}
+
+
+.reviews p{
+    font-family: 'Pacifico', cursive;
+    margin-right: 1rem;
+    font-size: 2rem;
+    padding-bottom: 5rem;
+}
+
+
+.information .reviews{
+    position: relative;
+    background: #fff;
+    width: 520px;
+    height: 498px;
+    min-width: 150px;
+    border-radius: 2rem;
+    padding: 20px;
+    box-shadow: 0 10px 30px #F59B00;
+}
+
+.information .reviews .ima ges{
+    height: 25%;;
+}
+
+.information .reviews .images img{
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+
+.information .reviews .images img.active{
+    display: block;
+}
+
+.information .reviews .dots{
+    width: 120px;
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.information .reviews button#prev,
+.information .reviews button#next{
+    color: white;
+    height: 40px;
+    width: 40px;
+    background: #F59B00;
+    border: none;
+    border-radius: 2rem;
+    box-shadow: 0 0 10px white;
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.information .reviews button#prev{
+    left: -60px;
+}
+
+.information .reviews button#next{
+    right: -60px;
+}
+
+
+section{
+    background-color:#EEEFF1;
+    padding-top: 130px;
+}
+
+section h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 31px;
+    font-weight: 700px;
+    line-height: 43.4px;
+    color:#2F2F2F;
+}
+
+section p{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 25.6px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(4,  2fr);
+    width: 100%;
+    max-width: 1000px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap:103px;
+    row-gap: 25px; ;
+    margin: 130px auto;
+}
+
+
+
+.product{
+    padding: 10px;
+    background:#FFE1E8;
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    transition: 0.2s;
+    position: relative;
+}
+
+.product:hover{
+    box-shadow: 4px 8px 16px rgba(255, 102, 51, 0.2);
+}
+
+.product img{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.email{
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    display: inline-flex;
+    text-align: right;
+}
+
+.form img{ 
+    height: 492px;
+    width: 549px;
+}
+form {
+    background-color:#2F2F2F;
+    text-align: center;
+    margin-right: 4rem;
+    line-height: 3rem;
+	min-width: 25rem;
+    height: 492px;
+    width: 549px;
+}
+
+
+.title{
+    padding-top: 2rem;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+	
+.form-control {
+    margin-bottom: 1rem;
+    background-color: #f2f6f8;
+	border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}		
+.thick {
+    height: 3.3rem;
+    padding: 1rem 6rem;
+}
+		
+.thick:focus {
+	background-color: #f2f6f8;
+	border: none;
+	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+	
+.message .form-control {
+	padding: 1rem 6rem;
+}
+	
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+}
+	
+.input,
+  .textarea {
+		font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+}
+	
+
+
+.btn.btn-primary {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image:linear-gradient(131deg, orange , #f81894);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #f81894;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+
+footer{
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center; 
+    align-items:center;
+    text-align: center;
+    width: 1600px;
+    height: 218px;
+    background-color:#2F2F2F;
+}
+
+.foot{
+    justify-content: center;
+    justify-items: center; 
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+
+.firma img{
+    width: 35%;
+}
+
+.firma p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 227px;
+}
+
+.contact{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 200px;
+    color:#EEEFF1;
+}
+
+.contact h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.contact p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.news{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    text-align: left;
+}
+
+.news h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+.position{
+    margin-top: 20px;
+}
+
+
+
+
+

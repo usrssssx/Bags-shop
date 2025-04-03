@@ -1,0 +1,384 @@
+@font-face{
+    font-family: "Arial Black";
+    src: url("fonts/arial_black.ttf");
+}
+ 
+@font-face{
+    font-family: "Segoe UI Bold";
+    src: url("fonts/Segoe\ UI\ Bold.ttf");  
+}
+@font-face{
+    font-family: "Segoe UI Bold Italic";
+    src: url("fonts/Segoe\ UI\ Bold\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI Italic";
+    src: url("fonts/Segoe\ UI\ Italic.ttf");  
+}
+
+@font-face{
+    font-family: "Segoe UI";
+    src: url("fonts/Segoe\ UI.ttf");  
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    
+    
+}
+
+.main{
+    width: 1600px;
+    height: 800px;
+}
+
+img{
+    width: 35%;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color:#2F2F2F;
+    align-items:center;
+    text-align: center;
+    font-family: "Segoe UI", sans-serif;
+}
+
+nav{
+    width: 1600px;
+    font-family: 'Pacifico', cursive;
+    margin-left: 225px;
+    padding-top: 48px;
+    align-items:center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+span{
+    white-space: nowrap;
+}
+
+.nav-logo{
+    margin-left: 100px;
+    max-width: 50%;
+}
+
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.link a{
+    font-size: 16px;
+    position: relative;
+    padding-bottom: 0.25rem;
+    color:#EEEFF1;
+}
+
+
+
+.link a::after{
+    content:"";
+    position: absolute;
+    height: 0.1rem;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #F59B00;
+    transition: all 0.3s ease;
+}
+
+.link a:hover::after{
+    width:70%;
+}
+
+.btn{
+    font-family: 'Pacifico', cursive;
+    border-radius:5px;
+    gap: 10px;
+    background-color:#F59B00;
+    color:#EEEFF1;
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color:black;
+    background-color:white;
+    transition: all 0.3s ease;
+}
+
+.btn a{
+    color:black;
+}
+
+
+
+nav button{
+    margin-right: 300px;
+}
+
+header{
+    width: 1600px;
+    height: 585px;
+    margin: 50px auto;
+}
+
+header h1{
+ color:#EEEFF1;
+ font-size: 61;
+}
+
+.icons{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.icon{
+    color: #EEEFF1;
+}
+
+.icon i{
+    padding: 15px;
+    background-color:#F59B00;
+    border-radius:25%;
+    font-size: 60px;
+}
+
+.icon h2{
+    margin-top: 20px;
+}
+
+
+.container{
+    background:#EEEFF1;
+    padding-top:100px;
+}
+
+
+.send-mail{
+    padding-top: 130px;
+    background:#EEEFF1;
+}
+
+.cards{
+    padding-top: 90px;
+    padding-bottom: 40px;
+    display: inline-flex;
+    width: 100%;
+    max-width: 1000px; 
+    justify-content: center;
+    justify-items: center; 
+    column-gap:103px;
+    row-gap: 100px; ;
+    margin: auto;
+}
+
+.card{
+    cursor:pointer;
+    position: relative;
+    height: 344px;
+    width: 644px;
+    min-height: 350px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+  
+.cover-image {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+  
+.wrapper {
+    transition: all 0.5s;
+    width: 100%;
+}
+
+.email{
+    justify-content: center;
+    justify-items: center;
+    align-items:center;
+    margin: 0 auto;
+    padding-bottom: 200px;
+    grid-template-columns: repeat(2, 1fr);
+    display: inline-flex;
+    text-align: right;
+}
+
+.form img{ 
+    height: 492px;
+    width: 549px;
+}
+form {
+    background-color:#2F2F2F;
+    text-align: center;
+    margin-right: 4rem;
+    line-height: 3rem;
+	min-width: 25rem;
+    height: 492px;
+    width: 549px;
+}
+
+
+.title{
+    padding-top: 2rem;
+	font-family: 'Pacifico', cursive;
+	color: white;
+	font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+	
+.form-control {
+    margin-bottom: 1rem;
+    background-color: #f2f6f8;
+	border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}		
+.thick {
+    height: 3.3rem;
+    padding: 1rem 6rem;
+}
+		
+.thick:focus {
+	background-color: #f2f6f8;
+	border: none;
+	box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+}
+
+	
+.message .form-control {
+	padding: 1rem 6rem;
+}
+	
+::placeholder {
+    font-family: 'Quicksand', sans-serif;
+	font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+}
+	
+.input,
+  .textarea {
+		font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+}
+	
+
+
+.btn.btn-primary {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image:linear-gradient(131deg, orange , #f81894);
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #f81894;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+
+footer{
+    margin: 0 auto;
+    justify-content: center;
+    justify-items: center; 
+    align-items:center;
+    text-align: center;
+    width: 1600px;
+    height: 218px;
+    background-color:#2F2F2F;
+}
+
+.foot{
+    justify-content: center;
+    justify-items: center; 
+    margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+}
+
+.firma img{
+    width: 35%;
+}
+
+.firma p{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 227px;
+}
+
+.contact{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
+    margin-left: 200px;
+    color:#EEEFF1;
+}
+
+.contact h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.contact p{
+    margin-top: 20px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.news{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#EEEFF1;
+    text-align: left;
+}
+
+.news h3{
+    font-size: 20;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+
+.position{
+    margin-top: 20px;
+}
